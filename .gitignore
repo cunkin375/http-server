@@ -1,0 +1,29 @@
+# Directories
+.vs/
+bin/
+bin-int/
+build/
+
+# Files
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
+*.sln
+*.ps1
+*.ini
+*.md
+*.sh
+*.txt
+*.rdc
+
+# Exclude
+!vendor/bin
+!.ignore
+!README.md
+!DefaultLayout.ini
+
+build_ninja
+build_vs
+CMakeSettings.json
+.clangd
+.cache/neocmakelsp
