@@ -13,7 +13,6 @@ build/
 *.ini
 *.md
 *.sh
-*.txt
 *.rdc
 
 # Exclude
