@@ -26,3 +26,5 @@ build_vs
 CMakeSettings.json
 .clangd
 .cache/neocmakelsp
+
+!.clang-format
