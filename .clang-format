@@ -27,10 +27,7 @@ AlignConsecutiveDeclarations: 'true'      # Align consecutive variable declarati
 AlignOperands: 'true'                     # Align operands in expressions
 AlignTrailingComments: 'true'             # Align trailing comments to the same column
 
-BreakBeforeBraces: Custom
-BraceWrapping:
-  AfterFunction: 'true'
-
+BreakBeforeBraces: Allman
 BreakBeforeBinaryOperators: NonAssignment
 BreakTemplateDeclarations: Yes
 
