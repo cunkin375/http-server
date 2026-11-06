@@ -4,11 +4,11 @@
 #include <cstdlib>
 #include <malloc.h>
 #include <memory.h>
-#include <print>
 #include <string>
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <iostream>
 
 namespace
 {
@@ -59,12 +59,12 @@ int main(int argc, char **argv)
         std::int32_t result = read(producer_fd, buffer, sizeof(buffer));
         if (result < 0)
         {
-            std::println("read() error after {} bytes: {}", bytes_read, strerror(errno));
+            std::cout << "read() error after" << bytes_read <<  "bytes: " << strerror(errno) << "\n";
             break;
         }
         if (result == 0)
         {
-            std::println("EOF");
+            std::cout << "EOF\n";
             break;
         }
         bytes_read += result;
@@ -72,6 +72,6 @@ int main(int argc, char **argv)
     }
 
     if (show_message)
-        std::println("Message: {}", final_message);
-    std::println("Read {} bytes", bytes_read);
+        std::cout << final_message << "\n";
+    std::cout << "Read" << bytes_read << "bytes";
 }
