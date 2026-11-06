@@ -3,7 +3,7 @@ BasedOnStyle: LLVM
 
 Cpp11BracedListStyle: false
 
-ColumnLimit: 110
+ColumnLimit: 150
 
 IndentWidth: 4
 IndentAccessModifiers: false
@@ -27,7 +27,10 @@ AlignConsecutiveDeclarations: 'true'      # Align consecutive variable declarati
 AlignOperands: 'true'                     # Align operands in expressions
 AlignTrailingComments: 'true'             # Align trailing comments to the same column
 
-BreakBeforeBraces: Allman
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: 'true'
+
 BreakBeforeBinaryOperators: NonAssignment
 BreakTemplateDeclarations: Yes
 
